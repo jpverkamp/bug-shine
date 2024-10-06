@@ -1,0 +1,20 @@
+[package]
+name = "shine"
+version = "0.1.0"
+authors = ["JP Verkamp <me@jverkamp.com>"]
+edition = "2021"
+publish = false
+
+[features]
+optimize = ["log/release_max_level_warn"]
+default = ["optimize"]
+
+[dependencies]
+env_logger = "0.10"
+error-iter = "0.4"
+log = "0.4"
+noise = "0.9.0"
+pixels = "0.14.0"
+rand = "0.8.5"
+winit = { version = "0.29", features = ["rwh_05"] }
+winit_input_helper = "0.15"
